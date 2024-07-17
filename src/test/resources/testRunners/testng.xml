@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose = "3" parallel="tests" thread-count="3">
+	
+	<test name = "Opencart Test">
+		<parameter name="browser" value="chrome"> </parameter>
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login"	/>
+		<parameter name="username" value="kavitha+0@gmail.com"></parameter>
+		<parameter name="password" value="Test@123"></parameter>
+			
+			<classes> 
+			<class name="Mytests.OpenCartLoginTest">
+				
+			</class>
+		</classes>
+	</test>
+
+	
+	
+	
+	
+	
+	
+</suite>
